@@ -11,6 +11,7 @@
 		5B3724D62C1A92C7004726AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3724D52C1A92C7004726AB /* ContentView.swift */; };
 		5B3724D82C1A92CA004726AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3724D72C1A92CA004726AB /* Assets.xcassets */; };
 		5B3724DB2C1A92CA004726AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3724DA2C1A92CA004726AB /* Preview Assets.xcassets */; };
+		5B3724E42C1A9616004726AB /* LaTeXSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5B3724E32C1A9616004726AB /* LaTeXSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3724E42C1A9616004726AB /* LaTeXSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = MathLaTeX;
+			packageProductDependencies = (
+				5B3724E32C1A9616004726AB /* LaTeXSwiftUI */,
+			);
 			productName = MathLaTeX;
 			productReference = 5B3724D02C1A92C7004726AB /* MathLaTeX.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 5B3724C72C1A92C7004726AB;
+			packageReferences = (
+				5B3724E22C1A9616004726AB /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */,
+			);
 			productRefGroup = 5B3724D12C1A92C7004726AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B3724E22C1A9616004726AB /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/colinc86/LaTeXSwiftUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B3724E32C1A9616004726AB /* LaTeXSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B3724E22C1A9616004726AB /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */;
+			productName = LaTeXSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B3724C82C1A92C7004726AB /* Project object */;
 }
